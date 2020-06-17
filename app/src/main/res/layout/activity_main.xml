@@ -54,11 +54,19 @@
         app:layout_constraintStart_toEndOf="@+id/btnStart" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button３"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="WIJAYA"
         tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="648dp" />
+
+    <Button
+        android:id="@+id/button４"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ｊｅｆｆ"
+        tools:layout_editor_absoluteX="190dp"
         tools:layout_editor_absoluteY="648dp" />
 
 
