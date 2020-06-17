@@ -53,21 +53,44 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnStart" />
 
-    <Button
-        android:id="@+id/button３"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="WIJAYA"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="648dp" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"  />
 
-    <Button
-        android:id="@+id/button４"
+    <EditText
+        android:id="@+id/editTextGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ｊｅｆｆ"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="648dp" />
+        android:hint="請輸入綠燈秒數"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextYellow"
+        app:layout_constraintTop_toTopOf="@+id/gl3"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <EditText
+        android:id="@+id/editTextYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="請輸入黃燈秒數"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/editTextGreen"
+        app:layout_constraintEnd_toStartOf="@+id/editTextRed"
+        app:layout_constraintTop_toTopOf="@+id/gl3" />
+
+    <EditText
+        android:id="@+id/editTextRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="請輸入紅燈秒數"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextYellow"
+        app:layout_constraintTop_toTopOf="@+id/gl3" />
+
 
 
 </android.support.constraint.ConstraintLayout>
